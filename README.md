@@ -1,2 +1,2 @@
 # nanoNOMe
-Software pipeline for open-chromatin analysis of Oxford Nanopore sequencing data.
+Multi-tool software pipeline for open-chromatin analysis of Oxford Nanopore sequencing data.
