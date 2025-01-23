@@ -1,8 +1,8 @@
 # chraccd
 
-This pipeline is still in production! Handle with care!
+**This pipeline is still in production! Handle with care!**
 
-Multi-tool software pipeline for chromatin accessibility detection of Oxford Nanopore sequencing data. 
+**Multi-tool software pipeline for chromatin accessibility detection of Oxford Nanopore sequencing data.**
 
 The software pipeline is based on the paper: Simultaneous profiling of chromatin accessibility and methylation on human cell lines with nanopore sequencing (https://www.nature.com/articles/s41592-020-01000-7#Sec9). Since the pipeline is designed for Oxford Nanopore Technologies r9.4.1 flowcell an updated pipeline needs to be created. 
 The introduced sequencing technique nanoNOMe works similar to nucleosome occupancy and methylome sequencing (NOMe-seq) in Bisulfite sequencing which labels open chromatin by exposing the DNA to an exogenous M. CviPI GpC methyltransferase which methylates the GpC motif within open chromatin. 
