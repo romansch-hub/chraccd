@@ -6,9 +6,6 @@ timestamp
 
 while IFS= read -r line
 	do 
-		#echo "$line"
-		#python3 filter_modbam.py -i mid.bed -o out2.bed
-		#rm mid.bed
 		awk '{if ($11 == "nan") $11 = 0;
         		if ($12 == "nan") $12 = 0;
         		if ($13 == "nan") $13 = 0;
