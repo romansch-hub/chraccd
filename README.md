@@ -51,7 +51,8 @@ To translate the non-CpG motif into a GpC motif I run the following lookup to re
 Rscript lookup.R
 ```
 
-The output file loci.bed needs to split into chromosomes like (loci.chr1.bed) and folders for each chromosome needs to be created (like chr1).
+The output file loci.bed needs to split into chromosomes like (loci.chr1.bed) and folders for each chromosome needs to be created (like chr1). 
+You might be interesed in looking into these github repos for more information on the peak calling (https://github.com/timplab/nanopore-methylation-utilities/tree/ece6407a8db9671c00136667996a6c0b1d3f5a20, https://github.com/timplab/nanoNOMe) 
 
 Then the final peak calling can be run which will create a bed file which can be viewed in e.g. IGV.
 
