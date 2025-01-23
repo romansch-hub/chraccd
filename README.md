@@ -42,4 +42,23 @@ Modbam2bed can currently not filter for GpC motif and can correctly assign the m
 coverage2cytosine --genome_folder ref/ --dir . --output cov2cyt --gc --nome-seq <input.file>
 ```
 
+To translate the non-CpG motif into a GpC motif I run the following lookup to remove all other motifs but GpC. (the input is cov2cyt.NOMe.GpC_report.txt the output file of the previous command.
+
+```
+Rscript lookup.R
+```
+
+The output file loci.bed needs to split into chromosomes like (loci.chr1.bed) and folders for each chromosome needs to be created (like chr1).
+
+Then the final peak calling can be run which will create a bed file which can be viewed in e.g. IGV.
+
+```
+Rscript peak_calling.R
+```
+
+
+
+
+
+
 
