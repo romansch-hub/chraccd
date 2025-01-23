@@ -1,9 +1,9 @@
 # chraccd
-Multi-tool software pipeline for chromatin accessibility detection of Oxford Nanopore sequencing data.
+Multi-tool software pipeline for chromatin accessibility detection of Oxford Nanopore sequencing data. 
 
 The software pipeline is based on the paper: Simultaneous profiling of chromatin accessibility and methylation on human cell lines with nanopore sequencing (https://www.nature.com/articles/s41592-020-01000-7#Sec9). Since the pipeline is designed for Oxford Nanopore Technologies r9.4.1 flowcell an updated pipeline needs to be created. 
 The introduced sequencing technique nanoNOMe works similar to nucleosome occupancy and methylome sequencing (NOMe-seq) in Bisulfite sequencing which labels open chromatin by exposing the DNA to an exogenous M. CviPI GpC methyltransferase which methylates the GpC motif within open chromatin. 
-To detect the methylation I run Oxford Nanopore Sequencing with one change, modified basecalling. I use within modified basecalling the all purpose 5mC-5hmC (dna_r10.4.1_e8.2_400bps_hac@v5.0.0_5mC_5hmC_v3). But I encourge you to use the newest available modified basecalling model to increase the accuracy. 
+To detect the methylation I run Oxford Nanopore Sequencing with one change, modified basecalling. I use within modified basecalling the all purpose 5mC-5hmC (dna_r10.4.1_e8.2_400bps_hac@v5.0.0_5mC_5hmC_v3). But I encourge you to use the newest available modified basecalling model to increase the accuracy. (https://github.com/nanoporetech/dorado)
 
 Dorado basecaller can be run with the following code:
 
@@ -20,4 +20,8 @@ Dorado will write a samtag into the bamfile storing the methylated cytosines. To
 
 modbam2bed --chh --chg -e -m 5mC --combine <ref> sort.bam
 
+The output are two files in your working directory. 
+1. mod-counts.chh.bed
+2. mod-counts.chg.bed
 
+Modbam2bed can currently not filter out 
