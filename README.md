@@ -1,6 +1,6 @@
 # chraccd
 
-This pipeline is still in production. Handle with care.
+This pipeline is still in production! Handle with care!
 
 Multi-tool software pipeline for chromatin accessibility detection of Oxford Nanopore sequencing data. 
 
